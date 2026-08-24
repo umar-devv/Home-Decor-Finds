@@ -1,0 +1,6 @@
+{
+  "name": "HomeDecorFinds",
+  "description": "Small apartment home decor ideas, organization tips, budget DIY projects, and curated Amazon finds.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

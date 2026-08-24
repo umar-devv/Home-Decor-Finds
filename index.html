@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HomeDecorFinds | Small Apartment Decor Ideas, Organization & DIY</title>
+  <meta name="description" content="Sharing small apartment home decor ideas, organization tips, and DIY projects. Curated aesthetic finds, budget-friendly makeovers, and renter-friendly space-saving hacks." />
+  
+  <!-- Open Graph & Social Meta -->
+  <meta property="og:title" content="HomeDecorFinds - Small Apartment Decor & DIY" />
+  <meta property="og:description" content="Sharing small apartment home decor ideas, organization tips, and DIY projects." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&q=80" />
+
+  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Brand Stylesheet -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- =========================================================================
+       HEADER & NAVIGATION
+       ========================================================================= -->
+  <header class="header-site" id="site-header">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" id="header-brand-logo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-leaf"></i>
+        </div>
+        <div>HomeDecor<span class="accent-text">Finds</span></div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#blog" class="nav-link">Blog</a></li>
+          <li><a href="#amazon-finds" class="nav-link">Amazon Finds</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Wishlist / Saved Items Trigger -->
+        <button class="nav-icon-btn" id="nav-wishlist-btn" title="Saved Decor Wishlist" aria-label="Open Saved Items">
+          <i class="fa-regular fa-heart"></i>
+          <span class="wishlist-count" id="wishlist-badge-count" style="display: none;">0</span>
+        </button>
+
+        <a href="#amazon-finds" class="btn btn-primary btn-sm">
+          <i class="fa-brands fa-amazon"></i> Shop Finds
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Open Mobile Menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+  <aside class="mobile-menu-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+    <div class="drawer-header">
+      <div class="brand-logo" style="font-size: 1.3rem;">
+        <div class="logo-icon" style="width: 2rem; height: 2rem; font-size: 0.9rem;">
+          <i class="fa-solid fa-leaf"></i>
+        </div>
+        HomeDecor<span class="accent-text">Finds</span>
+      </div>
+      <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Close Menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <ul class="mobile-nav-links">
+      <li><a href="#home" class="mobile-nav-link active"><span>Home</span> <i class="fa-solid fa-chevron-right" style="font-size: 0.8rem;"></i></a></li>
+      <li><a href="#blog" class="mobile-nav-link"><span>Blog Guides</span> <i class="fa-solid fa-chevron-right" style="font-size: 0.8rem;"></i></a></li>
+      <li><a href="#amazon-finds" class="mobile-nav-link"><span>Amazon Finds</span> <i class="fa-solid fa-chevron-right" style="font-size: 0.8rem;"></i></a></li>
+      <li><a href="#about" class="mobile-nav-link"><span>About Creator</span> <i class="fa-solid fa-chevron-right" style="font-size: 0.8rem;"></i></a></li>
+      <li><a href="#contact" class="mobile-nav-link"><span>Contact Us</span> <i class="fa-solid fa-chevron-right" style="font-size: 0.8rem;"></i></a></li>
+    </ul>
+
+    <div style="margin-top: auto; padding-top: 1.5rem; border-top: 1px solid var(--color-border);">
+      <button class="btn btn-outline" id="mobile-wishlist-btn" style="width: 100%; margin-bottom: 0.75rem;">
+        <i class="fa-regular fa-heart text-accent"></i> Saved Favorites
+      </button>
+      <a href="#amazon-finds" class="btn btn-primary" style="width: 100%;">
+        <i class="fa-brands fa-amazon"></i> Explore Amazon Finds
+      </a>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       HERO SECTION
+       ========================================================================= -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Hero Text -->
+        <div class="hero-content">
+          <div class="hero-tag">
+            <i class="fa-solid fa-sparkles"></i> Curated Renter-Friendly Living
+          </div>
+          <h1 class="hero-title">
+            Make Small Spaces Feel <span>Cozy & Magical</span>.
+          </h1>
+          <p class="hero-tagline">
+            Sharing small apartment home decor ideas, organization tips, and DIY projects. Transform compact rental spaces into dream sanctuaries with our budget-friendly aesthetic finds and damage-free hacks.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#blog" class="btn btn-primary">
+              <i class="fa-solid fa-book-open-reader"></i> Explore Decor Guides
+            </a>
+            <a href="#amazon-finds" class="btn btn-secondary">
+              <i class="fa-brands fa-amazon"></i> Shop Curated Finds
+            </a>
+          </div>
+
+          <!-- Value Pillars / Highlights -->
+          <div class="hero-features">
+            <div class="hero-feat-item">
+              <i class="fa-solid fa-circle-check"></i> 100% Renter Friendly
+            </div>
+            <div class="hero-feat-item">
+              <i class="fa-solid fa-circle-check"></i> Under $50 Budget Picks
+            </div>
+            <div class="hero-feat-item">
+              <i class="fa-solid fa-circle-check"></i> Zero Security Deposit Risks
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Moodboard Visual Showcase -->
+        <div class="hero-visual-card">
+          <div class="hero-main-img-box">
+            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=80" alt="Aesthetic small apartment neutral living room" />
+          </div>
+
+          <div class="hero-floating-badge">
+            <div class="hero-badge-icon">
+              <i class="fa-solid fa-couch"></i>
+            </div>
+            <div class="hero-badge-text">
+              <h4>Studio Sanctuary</h4>
+              <p>Sage, Terracotta & Warm Beige</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       BLOG SECTION (PINTEREST STYLE GRID)
+       ========================================================================= -->
+  <section class="blog-section" id="blog">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label">Aesthetic Guides & Tips</span>
+        <h2 class="section-title">Latest Home Decor Articles</h2>
+        <p class="section-desc">
+          Practical styling blueprints, space-saving organization tutorials, and DIY woodworking projects tailored for small apartments and rentals.
+        </p>
+      </div>
+
+      <!-- Filter Controls & Search -->
+      <div class="filter-bar">
+        <div class="filter-pills" id="blog-filter-pills">
+          <button class="filter-pill-btn blog-filter-btn active" data-category="All">All Posts</button>
+          <button class="filter-pill-btn blog-filter-btn" data-category="Decor">Decor</button>
+          <button class="filter-pill-btn blog-filter-btn" data-category="Organization">Organization</button>
+          <button class="filter-pill-btn blog-filter-btn" data-category="DIY">DIY</button>
+          <button class="filter-pill-btn blog-filter-btn" data-category="Amazon Finds">Amazon Finds</button>
+        </div>
+
+        <div class="search-box-wrap">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" class="search-input" id="blog-search-input" placeholder="Search decor guides..." aria-label="Search articles" />
+        </div>
+      </div>
+
+      <!-- Blog Grid (Dynamic Injection) -->
+      <div class="blog-grid" id="blog-grid-container">
+        <!-- Rendered via script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       AMAZON FINDS SECTION
+       ========================================================================= -->
+  <section class="amazon-section" id="amazon-finds">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label">Curated Shopping List</span>
+        <h2 class="section-title">Amazon Rental Favorites</h2>
+        <p class="section-desc">
+          Our top tested and highly-rated pieces that maximize storage, bring cozy warmth, and require zero wall damage.
+        </p>
+      </div>
+
+      <!-- Affiliate Disclaimer Banner -->
+      <div class="amazon-disclaimer-banner">
+        <i class="fa-solid fa-circle-info" style="font-size: 1.1rem; flex-shrink: 0;"></i>
+        <span>
+          <strong>Affiliate Disclosure:</strong> As an Amazon Associate, HomeDecorFinds earns from qualifying purchases. We independently curate each piece based on quality, renter safety, and customer reviews.
+        </span>
+      </div>
+
+      <!-- Product Filter Pills -->
+      <div class="filter-bar" style="justify-content: center; margin-bottom: 2.5rem;">
+        <div class="filter-pills" id="prod-filter-pills">
+          <button class="filter-pill-btn prod-filter-btn active" data-category="All">All Finds (8)</button>
+          <button class="filter-pill-btn prod-filter-btn" data-category="Home Decor">Home Decor</button>
+          <button class="filter-pill-btn prod-filter-btn" data-category="Storage & Organization">Storage & Org</button>
+          <button class="filter-pill-btn prod-filter-btn" data-category="Kitchen">Kitchen</button>
+          <button class="filter-pill-btn prod-filter-btn" data-category="Bathroom">Bathroom</button>
+        </div>
+      </div>
+
+      <!-- Product Grid (Dynamic Injection) -->
+      <div class="product-grid" id="products-grid-container">
+        <!-- Rendered via script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       NEWSLETTER & RENTER CHECKLIST RIBBON
+       ========================================================================= -->
+  <section class="container">
+    <div class="renter-tips-banner">
+      <div class="renter-tips-inner">
+        <div class="renter-tips-content">
+          <span class="badge" style="background-color: rgba(255,255,255,0.15); color: #fff; margin-bottom: 1rem;">Free Download</span>
+          <h3>Get the Ultimate Rental Decor Checklist</h3>
+          <p>Join 14,000+ apartment dwellers receiving our weekly budget Amazon finds, DIY plans, and move-out security deposit protection tips.</p>
+          
+          <form class="newsletter-form" id="newsletter-form">
+            <input type="email" class="newsletter-input" id="newsletter-email" placeholder="Enter your email address..." required />
+            <button type="submit" class="btn btn-primary" style="padding: 0.75rem 1.4rem;">
+              Send Guide <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+
+        <div style="text-align: center;">
+          <div style="background: rgba(255, 255, 255, 0.08); border: 1px dashed rgba(255,255,255,0.25); border-radius: var(--radius-md); padding: 1.5rem; display: inline-block;">
+            <i class="fa-solid fa-file-shield" style="font-size: 2.5rem; color: var(--color-accent); margin-bottom: 0.5rem;"></i>
+            <div style="font-weight: 700; font-size: 1rem; color: #fff;">100% Free PDF</div>
+            <div style="font-size: 0.8rem; color: rgba(255,255,255,0.7);">Instant Inbox Delivery</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       ABOUT SECTION
+       ========================================================================= -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <!-- About Image & Stat -->
+        <div class="about-image-wrapper">
+          <div class="about-img-frame">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="Mia - Creator of HomeDecorFinds" />
+          </div>
+          <div class="about-stat-card">
+            <div class="about-stat-number">480</div>
+            <div class="about-stat-label">Square Feet Styled</div>
+          </div>
+        </div>
+
+        <!-- About Story & Bio -->
+        <div class="about-content">
+          <span class="section-label">Meet The Creator</span>
+          <h2>Aesthetic Living in Modest Square Footage</h2>
+          <div class="about-tagline">"You do not need to own a home to love the space you live in."</div>
+
+          <p>
+            Hi! I'm Mia, the voice and small-space enthusiast behind <strong>HomeDecorFinds</strong>. After moving through five different rental apartments in five years, I was tired of living with bland beige builder-grade walls and cluttered surfaces.
+          </p>
+          <p>
+            I created this platform to prove that renting shouldn't hold you back from high-end interior aesthetics. Through thoughtful palette balance (warm cream, soothing sage, and earthy terracotta), multi-functional storage, and easy DIY woodwork, you can turn any rental box into a welcoming, personalized sanctuary.
+          </p>
+
+          <!-- Core Pillars -->
+          <div class="about-pillars">
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <h4>Zero Damage</h4>
+              <p>100% renter-safe methods that protect your deposit.</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <i class="fa-solid fa-tags"></i>
+              </div>
+              <h4>Budget Minded</h4>
+              <p>Curating the best Amazon and DIY alternatives under $50.</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <i class="fa-solid fa-maximize"></i>
+              </div>
+              <h4>Max Capacity</h4>
+              <p>Space-saving vertical storage and optical flow tricks.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CONTACT SECTION
+       ========================================================================= -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-label">Get in Touch</span>
+        <h2 class="section-title">Let's Connect & Collaborate</h2>
+        <p class="section-desc">
+          Have a small space dilemma, decor question, or brand collaboration inquiry? Send us a note below!
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Information Panel -->
+        <div class="contact-info-panel">
+          <div>
+            <h3>Say Hello!</h3>
+            <p>We love chatting about rental hacks, styling ideas, and community DIY projects. We respond to every note within 24–48 hours.</p>
+
+            <ul class="contact-details-list">
+              <li class="contact-detail-item">
+                <div class="contact-detail-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <div style="font-size: 0.75rem; color: rgba(255,255,255,0.6);">Direct Email</div>
+                  <strong>zumar7790@gmail.com</strong>
+                </div>
+              </li>
+              <li class="contact-detail-item">
+                <div class="contact-detail-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <div style="font-size: 0.75rem; color: rgba(255,255,255,0.6);">Studio Location</div>
+                  <strong>Seattle, WA &bull; Small Apartment HQ</strong>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <div style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-accent); margin-bottom: 0.75rem;">
+              Follow Along
+            </div>
+            <div class="contact-socials-row">
+              <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="contact-social-btn" title="Pinterest" aria-label="Pinterest">
+                <i class="fa-brands fa-pinterest-p"></i>
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="contact-social-btn" title="Instagram" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="contact-social-btn" title="TikTok" aria-label="TikTok">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="contact-social-btn" title="YouTube" aria-label="YouTube">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-panel">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Your Name <span class="text-accent">*</span></label>
+              <input type="text" id="contact-name" class="form-control" placeholder="e.g. Sarah Jenkins" required />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Email Address <span class="text-accent">*</span></label>
+              <input type="email" id="contact-email" class="form-control" placeholder="e.g. sarah@example.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject" class="form-label">Topic / Question</label>
+              <select id="contact-subject" class="form-control">
+                <option value="decor-advice">Decor & Styling Advice</option>
+                <option value="product-inquiry">Amazon Product Recommendation</option>
+                <option value="diy-question">DIY Floating Shelf Project</option>
+                <option value="brand-collab">Brand Collaboration / Sponsorship</option>
+                <option value="other">Other Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message <span class="text-accent">*</span></label>
+              <textarea id="contact-message" class="form-control" placeholder="Tell us about your rental space, dimensions, or questions..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fa-regular fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="footer-site">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand -->
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="logo-icon">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+            HomeDecor<span class="accent-text">Finds</span>
+          </div>
+          <p>
+            Sharing small apartment home decor ideas, organization tips, and DIY projects for cozy, aesthetic rental living.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="Pinterest" aria-label="Pinterest">
+              <i class="fa-brands fa-pinterest"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="Instagram" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="TikTok" aria-label="TikTok">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="YouTube" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#blog">Blog Articles</a></li>
+            <li><a href="#amazon-finds">Amazon Picks</a></li>
+            <li><a href="#about">About Mia</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Categories -->
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#blog">Small Space Decor</a></li>
+            <li><a href="#blog">Rental Organization</a></li>
+            <li><a href="#blog">Budget DIY Projects</a></li>
+            <li><a href="#amazon-finds">Under $50 Amazon Finds</a></li>
+            <li><a href="#amazon-finds">Kitchen & Bath Storage</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Amazon Disclaimer & Notice -->
+        <div class="footer-col">
+          <h4>Affiliate Disclosure</h4>
+          <div class="footer-affiliate-box">
+            HomeDecorFinds is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 HomeDecorFinds. All rights reserved. Crafted with care for rental lovers.</div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#home">Privacy Policy</a>
+          <a href="#home">Terms of Service</a>
+          <a href="#contact">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       WISHLIST DRAWER
+       ========================================================================= -->
+  <aside class="wishlist-drawer" id="wishlist-drawer" aria-label="Saved Favorites Drawer">
+    <div class="wishlist-drawer-header">
+      <h3 class="font-serif text-xl font-bold">
+        <i class="fa-solid fa-heart text-accent"></i> Saved Favorites
+      </h3>
+      <button class="drawer-close-btn" id="wishlist-close-btn" aria-label="Close Wishlist">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="wishlist-items-container" id="wishlist-items-body">
+      <!-- Injected via script.js -->
+    </div>
+
+    <div style="padding: 1.25rem 1.5rem; border-top: 1px solid var(--color-border); background-color: var(--color-primary-light);">
+      <a href="#amazon-finds" class="btn btn-primary" style="width: 100%;" onclick="toggleWishlistDrawer(false)">
+        <i class="fa-brands fa-amazon"></i> Shop All Finds on Amazon
+      </a>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       GENERIC MODAL (ARTICLE READER & PRODUCT QUICK VIEW)
+       ========================================================================= -->
+  <div class="modal-backdrop" id="generic-modal" role="dialog" aria-modal="true">
+    <div class="modal-window">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="modal-content-container">
+        <!-- Injected via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       TOAST NOTIFICATIONS & BACK TO TOP
+       ========================================================================= -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <button class="back-to-top-btn" id="back-to-top" title="Back to top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Interactive JavaScript Engine -->
+  <script src="./script.js"></script>
+</body>
+</html>
